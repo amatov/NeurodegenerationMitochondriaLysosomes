@@ -11,24 +11,24 @@ clear all;
 % %-------------------
 
 
-% FINP='D:\matlab\iPierian\79363_video_1001.nd2\79363_1001.nd2'; % 599 sec
-% FINP='D:\matlab\iPierian\79363_video_2002.nd2\79363_2002.nd2'; %595.966258 seconds
-% FINP='D:\matlab\iPierian\79363_video_3003.nd2\79363_3003.nd2'; % 599 sec% prop front BAD
-% FINP='D:\matlab\iPierian\79363_video_4004.nd2\79363_4004.nd2'; % % (1,15)
-% FINP='D:\matlab\iPierian\79363_video_5005.nd2\79363_5005.nd2'; %  (1,15)
-% FINP='D:\matlab\iPierian\79363_video_6006.nd2\79363_6006.nd2'; %  (1,15)
-% FINP='D:\matlab\iPierian\79363_video_7007.nd2\79363_7007.nd2'; % 599 sec- old set up
+% FINP='D:\matlab\iPierian\79363_video_1001.nd2\79363_1001.nd2'; %  
+% FINP='D:\matlab\iPierian\79363_video_2002.nd2\79363_2002.nd2'; % 
+% FINP='D:\matlab\iPierian\79363_video_3003.nd2\79363_3003.nd2'; %   prop front BAD
+% FINP='D:\matlab\iPierian\79363_video_4004.nd2\79363_4004.nd2'; %  
+% FINP='D:\matlab\iPierian\79363_video_5005.nd2\79363_5005.nd2'; %   
+% FINP='D:\matlab\iPierian\79363_video_6006.nd2\79363_6006.nd2'; %   
+% FINP='D:\matlab\iPierian\79363_video_7007.nd2\79363_7007.nd2'; %  
 
-% FINP='D:\matlab\iPierian\3691_video_001.nd2\3691_1.nd2'; % 596.798305sec. ALL DONE
+% FINP='D:\matlab\iPierian\3691_video_001.nd2\3691_1.nd2'; % ALL DONE
 % FINP='D:\matlab\iPierian\3691_video_002.nd2\3691_2.nd2'; %+
 % FINP='D:\matlab\iPierian\3691_video_003.nd2\3691_3a.nd2'; 
 % FINP='D:\matlab\iPierian\3691_video_004.nd2\3691_4_2.nd2'; 
-% FINP='D:\matlab\iPierian\3691_video_005.nd2\3691_005.nd2'; % axon zig zag - jessica
+% FINP='D:\matlab\iPierian\3691_video_005.nd2\3691_005.nd2'; %  
 % FINP='D:\matlab\iPierian\3691_video_006.nd2\3691_006.nd2'; 
 % FINP='D:\matlab\iPierian\3691_video_007.nd2\3691_007.nd2';%926.863355 seconds
-% FINP='D:\matlab\iPierian\3691_video_008.nd2\3691_008.nd2'; %617.758617 seconds
+% FINP='D:\matlab\iPierian\3691_video_008.nd2\3691_008.nd2'; %
 
-% FINP='D:\matlab\iPierian\7F_video_1.nd2\7F_001.nd2';%  (1,15) all
+% FINP='D:\matlab\iPierian\7F_video_1.nd2\7F_001.nd2';%   
 % FINP='D:\matlab\iPierian\7F_video_2.nd2\7F_002.nd2';%  
 % FINP='D:\matlab\iPierian\7F_video_3.nd2\7F_003.nd2';% 
 % FINP='D:\matlab\iPierian\7F_video_4.nd2\7F_004.nd2';% 2 axons
@@ -36,17 +36,17 @@ clear all;
 % FINP='D:\matlab\iPierian\7F_video_6.nd2\7F_006.nd2';%  
 % FINP='D:\matlab\iPierian\7F_video_7.nd2\7F_007.nd2';%  
 % FINP='D:\matlab\iPierian\7F_video_8.nd2\7F_008.nd2';%  
-% FINP='D:\matlab\iPierian\7F_video_9.nd2\7F_009.nd2';%  
+% FINP='D:\matlab\iPierian\7F_video_9.nd2\7F_009.nd2';%  2 axons
 
-% 79363 - 7 movies - mostly done - 3 not done
-% 3691 - 8 movies - all done
-% 7F - 9 movies - not done, 2 combinatorics
-% 9181 - 7 movies - 
-% 9908 - 9 movies - 
-% 68691 - 7 movies -  
+% 79363 - 7 movies - 6 runs
+% 3691 - 8 movies -  done
+% 7F - 9 movies - 11 runs
+% 9181 - 7 movies - 8 runs
+% 9908 - 9 movies - 10 runs
+% 68691 - 7 movies -  13 runs
 
-% FINP='D:\matlab\iPierian\9181_video_1.nd2\9181.2_001.nd2';%  (1,15)
-% FINP='D:\matlab\iPierian\9181_video_2.nd2\9181.2_002.nd2';%  NO(1,15)
+% FINP='D:\matlab\iPierian\9181_video_1.nd2\9181.2_001.nd2';%   
+% FINP='D:\matlab\iPierian\9181_video_2.nd2\9181.2_002.nd2';%   
 % FINP='D:\matlab\iPierian\9181_video_3.nd2\9181.2_003.nd2';% 
 % FINP='D:\matlab\iPierian\9181_video_4.nd2\9181.2_004.nd2';%  
 % FINP='D:\matlab\iPierian\9181_video_5.nd2\9181.2_005.nd2';% 
@@ -63,12 +63,12 @@ clear all;
 % FINP='D:\matlab\iPierian\9908_video_8.nd2\9908.1_008.nd2';% 
 % FINP='D:\matlab\iPierian\9908_video_9.nd2\9908.1_009.nd2';%  
 
-% FINP='D:\matlab\iPierian\68691_video_1.nd2\68691_001.nd2';%  bandpass (1,15)
-% FINP='D:\matlab\iPierian\68691_video_2.nd2\68691_002.nd2';%  3 axons(1,7)
+% FINP='D:\matlab\iPierian\68691_video_1.nd2\68691_001.nd2';%   
+% FINP='D:\matlab\iPierian\68691_video_2.nd2\68691_002.nd2';%  3 axons 
 % FINP='D:\matlab\iPierian\68691_video_3.nd2\68691_003.nd2';%  
 % FINP='D:\matlab\iPierian\68691_video_4.nd2\68691_004.nd2';%  
-% FINP='D:\matlab\iPierian\68691_video_5.nd2\68691_005.nd2';%  - 4 axons(1,15)
-FINP='D:\matlab\iPierian\68691_video_6.nd2\68691_006.nd2';%   - 2 axons(1,15)
+% FINP='D:\matlab\iPierian\68691_video_5.nd2\68691_005.nd2';%  - 4 axons 
+FINP='D:\matlab\iPierian\68691_video_6.nd2\68691_006.nd2';%   - 2 axons 
 % FINP='D:\matlab\iPierian\68691_video_7.nd2\68691_007.nd2';%  
 
 % FINP='\\\\Netapp\scope_video\msaporta\Time laspe\Axonal transport\Plate 4\BO5 video 1001.nd2'; %+
@@ -243,8 +243,9 @@ while (1)
     % REPLACE FROM HERE -----------------------------------------
     i0 = wiener2(im,[5 5]);
     a = bytscl(imadjust(i0, stretchlim(i0, 0.0001)));
-    b = bpass(a,1,3); % BAND PASS default (a,1,15) % for movies 79363 (1,3) , 8 movies 3691(1,7)
+    b = bpass(a,1,3); %  default (a,1,15) 
     b = imfill((bytscl(b)),'holes');
+    
     
     %do computation
     bw = adaptivethresh(b, 4, -20, 'gaussian', 'relative'); % (b,4
@@ -259,7 +260,6 @@ while (1)
     Lbw=bwlabel(bw);
     s = regionprops(Lbw,bwOut,'Area','MeanIntensity');
     bw1 = ismember(Lbw, find([s.MeanIntensity] < 0.01 & [s.Area] > 20 & [s.Area] < 140 ));%default bw1 = ismember(Lbw, find([s.MeanIntensity] < 0.01 & [s.Area] > 20
-    
     %toggle(bw,bw1)
     % REPLACE UNTIL HERE ------------------------------------------------------
     % NEW CODE STARTS HERE
