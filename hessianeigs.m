@@ -1,0 +1,72 @@
+% This function eig2image calculates the eigen values from the
+% hessian matrix, sorted by abs value. And gives the direction
+% of the ridge (eigenvector smallest eigenvalue) .
+% 
+% [Lambda1,Lambda2,Ix,Iy]=hessianeigs(I,Sigma)
+%
+
+function [Lambda1,Lambda2,Ix,Iy] = hessianeigs(I,Sigma)
+
+if nargin < 2, Sigma = 1; end
+
+[X,Y]   = ndgrid(-round(3*Sigma):round(3*Sigma));
+
+% Build the gaussian 2nd derivatives filters
+DGaussxx = 1/(2*pi*Sigma^4) * (X.^2/Sigma^2 - 1) .* exp(-(X.^2 + Y.^2)/(2*Sigma^2));
+DGaussxy = 1/(2*pi*Sigma^6) * (X .* Y)           .* exp(-(X.^2 + Y.^2)/(2*Sigma^2));
+DGaussyy = DGaussxx';
+
+Dxx = imfilter(I,DGaussxx,'conv');
+Dxy = imfilter(I,DGaussxy,'conv');
+Dyy = imfilter(I,DGaussyy,'conv');
+
+% Correct for scale
+Dxx = (Sigma^2)*Dxx;
+Dxy = (Sigma^2)*Dxy;
+Dyy = (Sigma^2)*Dyy;
+
+
+%
+% | Dxx  Dxy |
+% |          |
+% | Dxy  Dyy |
+
+
+% Compute the eigenvectors of J, v1 and v2
+tmp = sqrt((Dxx - Dyy).^2 + 4*Dxy.^2);
+v2x = 2*Dxy; v2y = Dyy - Dxx + tmp;
+
+% Normalize
+mag = sqrt(v2x.^2 + v2y.^2); i = (mag ~= 0);
+v2x(i) = v2x(i)./mag(i);
+v2y(i) = v2y(i)./mag(i);
+
+% The eigenvectors are orthogonal
+v1x = -v2y; 
+v1y = v2x;
+
+% Compute the eigenvalues
+mu1 = 0.5*(Dxx + Dyy + tmp);
+mu2 = 0.5*(Dxx + Dyy - tmp);
+
+% Sort eigen values by absolute value abs(Lambda1)<abs(Lambda2)
+check1=abs(mu1)>abs(mu2);
+check = sparse(check1);
+clear check1
+
+Lambda1=mu1; Lambda1(check)=mu2(check);
+Lambda2=mu2; Lambda2(check)=mu1(check);
+
+Ix=v1x; 
+clear v1x
+Ix(check)=v2x(check);
+clear v2x
+
+Iy=v1y; 
+clear v1y
+Iy(check)=v2y(check);
+
+
+
+
+
