@@ -2,4 +2,4 @@
 
 ### See also the AVI file with a movie on Parkinson's disease of motion tracking of lysosomes in a mouse astrocyte carrying the RRK2-G2019S mutation
 
-#### For further information, please refer to: https://researchgate.net/publication/375378322_Analysis_of_Mitochondrion_Lysosome_and_Microtubule_Dynamics_in_Alzheimer%27s_and_Parkinson%27s_Disease_Cells_for_Drug_Discovery_2011_-_2015
+#### For further information, please refer to: http://dx.doi.org/10.13140/RG.2.2.24918.01605
