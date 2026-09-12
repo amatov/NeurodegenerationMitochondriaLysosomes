@@ -1,0 +1,58 @@
+Neurodegeneration Mitochondria Lysosomes - License and Usage Notice
+======================================================================
+
+Copyright (c) Alexandre Matov. All rights reserved except as granted below.
+
+1. Scope
+--------
+This repository contains MATLAB and R source code developed by
+Alexandre Matov for motion and morphology analysis of mitochondria and
+lysosomes, together with a number of bundled third-party utility
+functions -- see section 4 below.
+
+2. Permitted use
+-----------------
+Permission is granted to use, copy, and modify the code in this repository
+free of charge for research and educational purposes, provided that:
+
+  a) Any resulting publication, presentation, or derivative work cites
+     the relevant publication referenced in README.md;
+  b) This notice is retained in copies or substantial portions of the
+     code.
+
+Commercial use, redistribution, or incorporation into a commercial
+product or service requires prior written permission from Alexandre Matov
+(alexandre.matov@gmail.com).
+
+3. No warranty
+---------------
+This software is provided "as is", without warranty of any kind, express
+or implied, including but not limited to the warranties of
+merchantability, fitness for a particular purpose, and noninfringement.
+In no event shall the author be liable for any claim, damages, or other
+liability arising from the use of this software.
+
+4. Third-party components
+--------------------------
+This repository bundles the following third-party utilities, none of
+which are covered by this notice:
+
+  - `bfopen.m` -- Bio-Formats (Open Microscopy Environment project).
+  - `distance2curve.m` -- John D'Errico (MATLAB File Exchange).
+  - `getkey.m` -- Jos van der Geest (MATLAB File Exchange).
+  - `tofloat.m` -- R.C. Gonzalez, R.E. Woods, S.L. Eddins, from
+    "Digital Image Processing Using MATLAB".
+  - `filtfilt.m` -- Copyright (C) 1999 Paul Kienzle, licensed under
+    the GNU General Public License (see the file's own header); it is
+    separately GPL-licensed and not covered by this notice.
+  - `hysthresh.m`, `nonmaxsuppts.m`, `normalise.m` -- Peter Kovesi's
+    MATLAB/Octave Functions for Computer Vision (University of Western
+    Australia).
+  - `gm_*.m` (17 files) -- the SDC Morphology Toolbox.
+  - `neu_*.m` (6 files) -- third-party neurite-skeletonization
+    utilities.
+  - `hessianeigs.m` / `meij_hessianeigs.m` -- a commonly-used
+    Hessian-eigenvalue snippet from vesselness/Frangi-filter
+    implementations.
+  - `track.m`, `bpass.m` -- the Crocker/Grier/Weeks particle-tracking
+    toolkit (University of Pennsylvania).

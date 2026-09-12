@@ -116,6 +116,7 @@ if(PrintToPdf){ dev.off() }
 rm(list=ls());
 #mydir = "y:/analysis/CMT/AxonalTransport/Plate4/";
 #mydir = "o:/methodsCMT/mario2/scope_video/msaporta/Time laspe/Axonal transport/Plate 4/";
+# EDIT: hardcoded absolute path to the original author's machine
 mydir = "D:/matlab/iPierian//";
 PLOT_TRAJS=TRUE; FoutTrajsPdf = "Trajectories1.pdf";
 setwd(mydir);
@@ -296,6 +297,7 @@ nint=200, xlab="[ mum/s ]", col="grey80",  xlim=c(-0.7,0.1) , type ="density", m
 write.table( res, file = "all_trajs_stats.csv", sep=",", col.names=TRUE, row.names=FALSE, quote=TRUE, na="");
 if(PrintToPdf){ dev.off() }
 rm(list=ls());
+# EDIT: hardcoded absolute path to the original author's machine
 mydir = "D:/matlab/iPierian//";
 dc
 cd
@@ -310,25 +312,30 @@ source("CMT_axonalTransport_Plate5")
 getwd()
 setwd('\R-code')
 setwd('/R-code')
+# EDIT: hardcoded absolute path to the original author's machine
 setwd('D:/matlab/iPierian/R-code')
 getwd()
 source("CMT_axonalTransport_Plate5")
 source("CMT_axonalTransport_Plate5.R")
+# EDIT: hardcoded absolute path to the original author's machine
 load("D:\\matlab\\iPierian\\.RData")
 source("CMT_axonalTransport_Plate5.R")
 getwd()
+# EDIT: hardcoded absolute path to the original author's machine
 setwd('D:/matlab/iPierian/R-code')
 getwd()
 source("CMT_axonalTransport_Plate5.R")
 ls()
 source("CMT_axonalTransport_Plate5.R")
 getwd()
+# EDIT: hardcoded absolute path to the original author's machine
 setwd('D:/matlab/iPierian/R-code')
 source("CMT_axonalTransport_Plate5.R")
 search()
 rm(list=ls());
 #mydir = "y:/analysis/CMT/AxonalTransport/Plate4/";
 #mydir = "o:/methodsCMT/mario2/scope_video/msaporta/Time laspe/Axonal transport/Plate 4/";
+# EDIT: hardcoded absolute path to the original author's machine
 mydir = "D:/matlab/iPierian/";
 PLOT_TRAJS=TRUE; FoutTrajsPdf = "Trajectories1.pdf";
 setwd(mydir);

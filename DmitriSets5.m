@@ -16,6 +16,7 @@
 % load ('tracks11.mat');
 % ret=tracksStats(tracksFinal, 3);
 x = 243; y = 259;
+% EDIT: hardcoded absolute path to the original author's machine
 I = imread('D:\Dmitri\set1\images\Nontg Astrocytes  Lysotracker-Red Hoesct-Image Export-01_b2t0001c3_ORG.tif');
 figure,imshow(I,[0 40000])
 hold on
@@ -36,6 +37,7 @@ plot(x,y,'r*')
 % load ('tracks12.mat');
 % ret=tracksStats(tracksFinal, 3);
 x = 278; y = 279;
+% EDIT: hardcoded absolute path to the original author's machine
 I = imread('D:\Dmitri\set2\images\Nontg Astrocytes  Lysotracker-Red Hoesct-02-Image Export-01_b2t0001c3_ORG.tif');
 figure,imshow(I,[0 30000])
 hold on

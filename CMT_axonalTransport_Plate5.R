@@ -1,6 +1,7 @@
 rm(list=ls());
 #mydir = "y:/analysis/CMT/AxonalTransport/Plate4/";
 #mydir = "o:/methodsCMT/mario2/scope_video/msaporta/Time laspe/Axonal transport/Plate 4/";
+# EDIT: hardcoded absolute path to the original author's machine
 mydir = "D:/matlab/iPierian/";
 
 PLOT_TRAJS=TRUE; FoutTrajsPdf = "Trajectories1.pdf";

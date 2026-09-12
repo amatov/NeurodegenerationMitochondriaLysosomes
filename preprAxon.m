@@ -1,3 +1,4 @@
+% EDIT: hardcoded absolute path to the original author's machine
 FINP='D:\matlab\iPierian\79363_7007.nd2'; %+
 
 data = bfopen(FINP);

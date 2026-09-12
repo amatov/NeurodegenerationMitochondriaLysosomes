@@ -68,6 +68,7 @@ clear all;
 % FINP='D:\matlab\iPierian\68691_video_3.nd2\68691_003.nd2';%  
 % FINP='D:\matlab\iPierian\68691_video_4.nd2\68691_004.nd2';%  
 % FINP='D:\matlab\iPierian\68691_video_5.nd2\68691_005.nd2';%  - 4 axons 
+% EDIT: hardcoded absolute path to the original author's machine
 FINP='D:\matlab\iPierian\68691_video_6.nd2\68691_006.nd2';%   - 2 axons 
 % FINP='D:\matlab\iPierian\68691_video_7.nd2\68691_007.nd2';%  
 

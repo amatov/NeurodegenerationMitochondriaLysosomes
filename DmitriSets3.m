@@ -47,6 +47,7 @@ clear ret
 
 load ('tracks1.mat');
 ret=tracksStats(tracksFinal, 3);
+% EDIT: hardcoded absolute path to the original author's machine
 I = imread('C:\Documents and Settings\amatov.LCCBWS035\Desktop\Dmitri\dmitri1\images\Nontg Astrocytes Lysotracker Red Hoescht_Room Temperature.czi - Nontg Astrocytes Lysotracker Red Hoescht_Room Temperature0000.tif');
 x = 270; y = 200;
 dxs = x- ret(:,2); % X-coord of the track on the first frame

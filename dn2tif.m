@@ -8,6 +8,7 @@ for i = 1:size(data,1)/2 % 301
     
    
 indxStr=sprintf(strg,i);
+    % EDIT: hardcoded absolute path to the original author's machine
     imwrite(data{(2*i-1),1},['D:\matlab\iPierian\images\79363_7007_',indxStr,'.tif']);
     
 end
