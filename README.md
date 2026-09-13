@@ -1,4 +1,4 @@
-## NeurodegenerationMitochondriaLysosomes
+## Neurodegeneration Mitochondria Lysosomes
 
 Matlab and R code for the motion and morphology analysis of mitochondria.
 
