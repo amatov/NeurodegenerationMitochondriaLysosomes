@@ -2,7 +2,7 @@
 
 ## Quick start
 
-This repository contains MATLAB and R scripts for motion and
+This repository contains Matlab and R scripts for motion and
 morphology analysis of mitochondria and lysosomes, together with a
 number of bundled third-party utility functions -- see LICENSE for
 their origins. See [DEPENDENCIES.md](DEPENDENCIES.md) for the required

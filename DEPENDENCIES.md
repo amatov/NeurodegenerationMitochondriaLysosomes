@@ -6,16 +6,16 @@
   scripts (`MatovAxonMitochondria.r`, `avgV_VHL_analysis_V13.R`,
   `CMT_axonalTransport_Plate5.R`).
 
-## MATLAB
+## Matlab
 
-No specific MATLAB version is recorded. Several scripts use functions
+No specific Matlab version is recorded. Several scripts use functions
 from the Image Processing Toolbox (`imread`, `imshow`, `bwlabel`,
 `regionprops`, `watershed`, `imfilter`). See LICENSE for the bundled
 third-party utility functions (SDC Morphology Toolbox, Peter Kovesi's
 Computer Vision functions, Bio-Formats, the Crocker/Grier/Weeks
 particle-tracking toolkit, and others).
 
-`hessianeigs.asv` is a MATLAB autosave file, not source code.
+`hessianeigs.asv` is a Matlab autosave file, not source code.
 
 ## Data files
 
