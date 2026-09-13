@@ -1,3 +1,5 @@
+## NeurodegenerationMitochondriaLysosomes
+
 ## Quick start
 
 This repository contains MATLAB and R scripts for motion and
@@ -15,7 +17,7 @@ R packages.
   not listed in LICENSE as third-party -- axon/mitochondria/lysosome
   motion tracking and morphology analysis.
 - `data/` -- `.mat` data files.
-- `media/` -- TIFF images, a PNG figure, and a video.
+- [`media/`](media/) -- TIFF images, a PNG figure, and a video.
 - `reports/` -- result-figure PDFs, and a reference paper (see its own
   description there).
 - **License:** see [LICENSE](LICENSE) -- research/educational use,
